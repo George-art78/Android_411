@@ -4,4 +4,9 @@
     <string name="sample_text">Hello</string>
     <string name="first_btn">Первая кнопка</string>
     <string name="second_btn">Вторая кнопка</string>
+    <string name="text">Нажми на кнопку :)</string>
+    <string name="bombarda">Бомбарда!</string>
+    <string name="text1">Что нужно сделать, если магия применена?</string>
+    <string name="correction">Обливиэйт!</string>
+
 </resources>
