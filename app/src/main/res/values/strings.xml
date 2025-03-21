@@ -9,4 +9,9 @@
     <string name="text1">Что нужно сделать, если магия применена?</string>
     <string name="correction">Обливиэйт!</string>
 
+    <string name="logo_text">Калькулятор</string>
+    <string name="number_1">Число 1</string>
+    <string name="number_2">Число 2</string>
+    <string name="sub_btn">Вычислить сумму</string>
+
 </resources>

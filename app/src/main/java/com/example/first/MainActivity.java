@@ -13,8 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-//    private TextView textSample;
-//    private Button secondButton;
+    private TextView textSample;
+    private Button secondButton;
 
     private TextView textOfApp;
     private TextView secondTextOfApp;
@@ -30,39 +30,39 @@ public class MainActivity extends AppCompatActivity {
 //        setContentView(R.layout.table_layout);
 //        setContentView(R.layout.frame_layout);
 //        setContentView(R.layout.scroll_view);
-        setContentView(R.layout.hm2_layout);
+        setContentView(R.layout.third_layout);
 
-//        textSample = findViewById(R.id.textSample);
-//        secondButton = findViewById(R.id.secondButton);
+        textSample = findViewById(R.id.textSample);
+        secondButton = findViewById(R.id.secondButton);
 
-        textOfApp = findViewById(R.id.textOfApp);
-        secondTextOfApp = findViewById(R.id.secondTextOfApp);
+//        textOfApp = findViewById(R.id.textOfApp);
+//        secondTextOfApp = findViewById(R.id.secondTextOfApp);
 
-//        secondButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                textSample.setText("Новое приветствие");
-//                textSample.setTextSize(40);
-//            }
-//        });
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-//            return insets;
-//        });
+        secondButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textSample.setText("Новое приветствие");
+                textSample.setTextSize(40);
+            }
+        });
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
     }
 
-//    public void sayHello(View view) {
-//        textSample.setText("Привет");
+    public void sayHello(View view) {
+        textSample.setText("Привет");
+    }
+
+//    public void bombarda(View v) {
+//        textOfApp.setText("Магия вне Хогвартса запрещена!");
+//        textOfApp.setTextSize(35);
 //    }
-
-    public void bombarda(View v) {
-        textOfApp.setText("Магия вне Хогвартса запрещена!");
-        textOfApp.setTextSize(35);
-    }
-
-    public void obliviate(View v) {
-        secondTextOfApp.setText("Обливиэйт!");
-        secondTextOfApp.setTextSize(35);
-    }
+//
+//    public void obliviate(View v) {
+//        secondTextOfApp.setText("Обливиэйт!");
+//        secondTextOfApp.setTextSize(35);
+//    }
 }
