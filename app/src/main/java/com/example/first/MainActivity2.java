@@ -16,7 +16,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     private TextView result;
     private EditText num1, num2;
-    private Button button;
+    private Button btn_add, btn_subtraction, btn_multiplication, btn_div;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,17 +29,20 @@ public class MainActivity2 extends AppCompatActivity {
 //            return insets;
 //        });
         result = findViewById(R.id.result);
-        num1 = findViewById(R.id.editNumber1);
-        num2 = findViewById(R.id.editNumber2);
-        button = findViewById(R.id.culcSum);
+        num1 = findViewById(R.id.number_1);
+        num2 = findViewById(R.id.number_2);
+        btn_add = findViewById(R.id.addition);
+        btn_subtraction = findViewById(R.id.subtraction);
+        btn_multiplication = findViewById(R.id.multiplication);
+        btn_div = findViewById(R.id.div);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Integer number1 = Integer.parseInt(num1.getText().toString());
                 Integer number2 = Integer.parseInt(num2.getText().toString());
 
-                result.setText(String.valueOf(number1 + number2));
+                result.setText(String.valueOf("Result: " + number1 + " + " + number2 + " = " + (number1 + number2)));
             }
         });
     }
