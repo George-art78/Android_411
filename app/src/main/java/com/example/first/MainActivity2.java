@@ -55,5 +55,29 @@ public class MainActivity2 extends AppCompatActivity {
                 result.setText(String.valueOf("Result: " + number1 + " - " + number2 + " = " + (number1 - number2)));
             }
         });
+
+        btn_multiplication.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Double number1 = Double.parseDouble(num1.getText().toString());
+                Double number2 = Double.parseDouble(num2.getText().toString());
+
+                result.setText(String.valueOf("Result: " + number1 + " * " + number2 + " = " + (number1 * number2)));
+            }
+        });
+
+        btn_div.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Double number1 = Double.parseDouble(num1.getText().toString());
+                Double number2 = Double.parseDouble(num2.getText().toString());
+
+                if (number2 != 0) {
+                    result.setText(String.valueOf("Result: " + number1 + " / " + number2 + " = " + (number1 / number2)));
+                } else {
+                    result.setText(String.valueOf("На 0 делить нельзя!"));
+                }
+            }
+        });
     }
 }
