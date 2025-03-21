@@ -39,10 +39,20 @@ public class MainActivity2 extends AppCompatActivity {
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Integer number1 = Integer.parseInt(num1.getText().toString());
-                Integer number2 = Integer.parseInt(num2.getText().toString());
+                Double number1 = Double.parseDouble(num1.getText().toString());
+                Double number2 = Double.parseDouble(num2.getText().toString());
 
                 result.setText(String.valueOf("Result: " + number1 + " + " + number2 + " = " + (number1 + number2)));
+            }
+        });
+
+        btn_subtraction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Double number1 = Double.parseDouble(num1.getText().toString());
+                Double number2 = Double.parseDouble(num2.getText().toString());
+
+                result.setText(String.valueOf("Result: " + number1 + " - " + number2 + " = " + (number1 - number2)));
             }
         });
     }
